@@ -108,7 +108,6 @@ input[type="radio"]:checked + span::after {
   background-color: #ff6d00;
 }
 
-/* Preloader */
 input[type="radio"] + span::before {
   border-radius: 0 !important;
   border: 2px solid #000;
@@ -153,13 +152,10 @@ input[type="radio"]:checked + span::after {
   color: #ffffff; 
 }
 
-/* Кнопка в футере */
 .modal-footer .btn {
   background-color: #ff6d00; 
   color: white;
 }
-
-/* Футер модалки */
 .modal-footer {
   background-color: #1a1a1a;
   padding: 1rem; 
@@ -180,7 +176,7 @@ input[type="radio"]:checked + span::after {
   font-size: 2rem;
   cursor: pointer;
   padding-bottom: 41px;
-  z-index: 10; /* Убедитесь, что кнопка поверх содержимого */
+  z-index: 10;
 }
 
 .close-btn {
