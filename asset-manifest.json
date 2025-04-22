@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/projectmovie/static/css/main.e2de83e2.css",
+    "main.js": "/projectmovie/static/js/main.7845868d.js",
+    "static/media/confused.png": "/projectmovie/static/media/confused.12925cf780711398d232.png",
+    "index.html": "/projectmovie/index.html",
+    "main.e2de83e2.css.map": "/projectmovie/static/css/main.e2de83e2.css.map",
+    "main.7845868d.js.map": "/projectmovie/static/js/main.7845868d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2de83e2.css",
+    "static/js/main.7845868d.js"
+  ]
+}
