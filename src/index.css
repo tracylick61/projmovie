@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  background-color: #151515;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.modal-content,
+.card-content,
+.card-title,
+p {
+  font-family: 'Roboto', sans-serif;
+}
+nav {
+  padding: 0 1.5rem;
+}
+
+.white-text {
+  padding: 0 0 0 1.5rem;
+}
+
+.white-text:last-child {
+  padding: 0;
+}
+
+.content {
+  min-height: calc(100vh - 134px);
+  padding: 1.5rem 0 0 0;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #1f1f1f;
+  color: #fff;
+  transform: scale(1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+}
+
+label:not(:last-child) {
+  margin-right: 1rem;
+}
+.preloader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.search-block {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-input-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ff6d00;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.search-input::placeholder {
+  color: #ccc;
+}
+
+.radio-group {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+input[type="radio"] + span::before {
+  border-radius: 0 !important;
+  border: 2px solid #ff6d00;
+  background-color: transparent;
+}
+
+input[type="radio"]:checked + span::after {
+  border-radius: 0 !important;
+  background-color: #ff6d00;
+}
+
+/* Preloader */
+input[type="radio"] + span::before {
+  border-radius: 0 !important;
+  border: 2px solid #000;
+}
+input[type="radio"]:checked + span::after {
+  border-radius: 0 !important;
+  background-color: #ff6d00; 
+}
+.preloader-ring {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.preloader-container p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #3498db;
+  font-weight: bold;
+}
+.error-message, .empty-result {
+  text-align: center;
+  color: #ff6f00;
+  margin-top: 2rem;
+  animation: fadeIn 0.7s ease-in-out;
+}
+.modal {
+  background-color: #1f1f1f; 
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modal .modal-content h4,
+.modal .modal-content p {
+  color: #ffffff; 
+}
+
+/* Кнопка в футере */
+.modal-footer .btn {
+  background-color: #ff6d00; 
+  color: white;
+}
+
+/* Футер модалки */
+.modal-footer {
+  background-color: #1a1a1a;
+  padding: 1rem; 
+  border-top: 1px solid #333; 
+}
+
+
+.modal-footer .btn:hover {
+  background-color: #e65c00; 
+}
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  color: #ff6d00;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-bottom: 41px;
+  z-index: 10; /* Убедитесь, что кнопка поверх содержимого */
+}
+
+.close-btn {
+  color: #fff;
+}
